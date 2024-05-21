@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Somas Parciais</title>
+</head>
+<body>
+    <script>
+        let somaParcial = 0;
+        let total = 0;
+        let resultado = "";
+
+        for (let i = 1; i <= 10; i++) {
+            somaParcial += i;
+            resultado += `${String.fromCharCode(96 + i)}) ${somaParcial} (soma parcial com o número ${i})\n`;
+            total = somaParcial;
+        }
+
+        resultado += `f) Soma total -> ${total}`;
+
+        console.log(resultado);
+        alert(resultado);
+        
+        a) 1 (soma parcial com o número 1)
+        b) 3 (soma parcial com o número 2)
+        c) 6 (soma parcial com o número 3)
+        d) 10 (soma parcial com o número 4)
+        e) 15 (soma parcial com o número 5)
+        f) 21 (soma parcial com o número 6)
+        g) 28 (soma parcial com o número 7)
+        h) 36 (soma parcial com o número 8)
+        i) 45 (soma parcial com o número 9)
+        j) 55 (soma parcial com o número 10)
+        f) Soma total -> 55
+
+    </script>
+
+
+
+</body>
+</html>
+
+
